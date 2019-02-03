@@ -2,24 +2,20 @@
 raspberry pi auto setup script
 
 ## Install Package
-### Raspbian Jessie
+### Raspbian Strech
 - JAPANESE environment(fonts-vlgothic)
 - Editor(vim,vim-gtk)
 - Terminal(gnome-terminal)
 - Pertition tool(gparted)
 - Virtual Terminal(screen)
 
-### Raspbian Jessie LITE
-- Editor(vim,vim-gtk)
+### Raspbian Strech Lite
+- Editor(vim)
 - Virtual Terminal(screen)
 
 ## Setting
-### Raspbian Jessie
+### Raspbian Strech
 - Custom `/boot/config.txt`
-
-### Raspbian Jessie LITE
-- Custom `/boot/config.txt`
-
 
 # Preparation
 - Make SD disk of Raspbian 
@@ -43,19 +39,19 @@ $ cd raspbian-setting
 ```
 
 
-## Raspbian Jessie setup case
+## Raspbian Strech setup case
 Execute following commands(last command takes about half an hour):
 ```sh
 $ ./setup-raspbian-stretch.sh
 ```
 
-## Shrink Raspbian Jessie
+## Shrink Raspbian Strech
 Execute following commands if you want to shrink raspbian:
 ```sh
 $ ./shrink-raspbian-stretch.sh
 ```
 
-## Raspbian Jessie LITE setup case
+## Raspbian Strech Lite setup case
 Execute following commands(last command takes about half an hour):
 ```sh
 $ ./setup-raspbian-strech-lite.sh
