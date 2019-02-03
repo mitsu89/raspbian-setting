@@ -1,0 +1,43 @@
+{
+    "bridge": {
+        "name": "Raspi3_Strech",
+        "username": "B8:27:EB:60:96:AF",
+        "port": 51821,
+        "pin": "031-45-155"
+    },
+
+    "description": "Living Room",
+
+    "accessories": [
+       {
+           "accessory": "CMD",
+           "name": "照明",
+           "on_cmd": "sudo python /home/pi/irmcli/irmcli.py -p -f /home/pi/irmcli/light_on.json",
+           "off_cmd": "sudo python /home/pi/irmcli/irmcli.py -p -f /home/pi/irmcli/light_off.json"
+       },
+       {
+           "accessory": "CMD",
+           "name": "冷房",
+           "on_cmd": "sudo python /home/pi/irmcli/irmcli.py -p -f /home/pi/irmcli/air-cool_on.json",
+           "off_cmd": "sudo python /home/pi/irmcli/irmcli.py -p -f /home/pi/irmcli/air-cool_off.json"
+       },
+       {  
+           "accessory": "CMD",
+           "name": "暖房",
+       
+       	   "on_cmd": "sudo python /home/pi/irmcli/irmcli.py -p -f /home/pi/irmcli/air-warm_on.json",
+           "off_cmd": "sudo python /home/pi/irmcli/irmcli.py -p -f /home/pi/irmcli/air-warm_off.json"
+       },
+       {
+            "accessory": "BME280",
+            "name": "Sensor",
+            "name_temperature": "Temperature",
+            "name_humidity": "Humidity",
+            "options": {
+	              "i2cBusNo": 1,
+	              "i2cAddress": "0x76"	      
+	    }
+	}
+
+    ]
+ }
