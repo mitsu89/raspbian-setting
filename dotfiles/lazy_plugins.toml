@@ -1,0 +1,27 @@
+#[[plugins]]
+#repo = 'ervandew/supertab'
+#on_ft = ['py']
+#hook_add = '''
+#    autocmd FileType python setlocal completeopt-=preview
+#    let g:SuperTabContextDefaultCompletionType = 'context'
+#    let g:SuperTabDefaultCompletionType = '<c-n>'
+#    let g:jedi#force_py_version='3'
+#'''
+
+# toml用
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+
+# markdown用ns]]↲
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ft = ['md', 'markdown']
+# markdownプレビュー
+[[plugins]]
+repo = 'previm/previm'
+on_ft = ['md', 'markdown']
+# markdownテーブル作成
+[[plugins]]
+repo = 'mattn/vim-maketable'
+on_ft = ['md', 'markdown']

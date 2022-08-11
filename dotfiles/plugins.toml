@@ -1,0 +1,124 @@
+# dein自身の管理
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# ツリー表示用
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+# カラースキーム
+[[plugins]]
+#repo = 'kuroitu/pyceberg'
+#hook_add = '''
+#    colorscheme pyceberg
+#'''
+#repo = 'tomasr/molokai'
+repo = 'cocopon/iceberg.vim'
+
+# Pythonコード補完
+[[plugins]]
+ repo = 'davidhalter/jedi-vim'
+ on_ft = 'python'
+
+# カラーリングテーブル
+#[[plugins]]
+#repo = 'guns/xterm-color-table.vim'
+
+# ステータスラインの表示内容強化
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+# インデントの可視化
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+# 末尾の全角半角文字をハイライト
+#[[plugins]]
+#repo = 'bronson/vim-trailing-whitespace'
+
+# 構文エラーチェック
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+# html  マークアップ
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+# ddc.vim
+#[[plugins]]
+#repo = 'Shougo/ddc.vim'
+
+#DenoでVimプラグインを開発するためのプラグイン
+#[[plugins]]
+#repo = 'vim-denops/denops.vim'
+
+#ポップアップウィンドウを表示するプラグイン
+#[[plugins]]
+#repo = 'Shougo/pum.vim'
+
+#カーソル周辺の既出単語を補完するsource
+#[[plugins]]
+#repo = 'Shougo/ddc-around'
+
+# ファイル名を補完するsource
+#[[plugins]]
+#repo = 'LumaKernel/ddc-file'
+
+#入力中の単語を補完の対象にするfilter
+#[[plugins]]
+#repo = 'Shougo/ddc-matcher_head'
+
+#補完候補を適切にソートするfilter
+#[[plugins]]
+#repo = 'Shougo/ddc-sorter_rank'
+
+#補完候補の重複を防ぐためのfilter
+#[[plugins]]
+#repo = 'Shougo/ddc-converter_remove_overlap'
+
+#
+#[[plugins]]
+#repo = 'mattn/vim-lsp-settings'
+
+#
+#[[plugins]]
+#ns]]↲ns]]↲repo = 'prabirshrestha/vim-lsp'
+
+# 多機能セレクタ
+#[[plugins]]
+#repo = 'ctrlpvim/ctrlp.vim'
+
+# CtrlPの拡張プラグイン(関数検索)
+#[[plugins]]ddc.vim
+#repo = 'tacahiroy/ctrlp-funky'
+
+# CtrlPの拡張プラグイン(コマンド履歴検索'
+#[[plugins]]
+#repo = 'suy/vim-ctrlp-commandline'
+
+# CtrlPの検索にagを使う
+#[[plugins]]
+#repo = 'rking/ag.vim'
+
+# プロジェクトに入っているESLintを読み込む
+[[plugins]]
+repo = 'pmsorhaindo/syntastic-local-eslint.vim'
+
+# vimヘルプ日本語化
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+hook_add = '''
+    set helplang=ja
+'''
+
+# vim置換プレビュー
+[[plugins]]
+repo = 'markonm/traces.vim'
+
+# vimでGoogle翻訳
+[[plugins]]
+repo = 'skanehira/translate.vim'
+hook_add = '''
+    let g:translate_popup_window=1
+    vmap t <Plug>(VTranslate)
+'''
